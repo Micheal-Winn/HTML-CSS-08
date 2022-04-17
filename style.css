@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url(./images/bg-pattern-top-desktop.svg);
+}
+.container {
+    width: 65%;
+    margin: 0 auto;
+}
+.top-heading {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.top-heading h1 {
+    font-size: 2.5rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.top-heading p {
+    font-size: .7rem;
+    color: hsl(303, 10%, 53%);
+    margin-bottom: 2rem;
+    line-height: 1.2rem;
+}
+.top-heading p , .card p {
+    font-weight: 500;
+    opacity: .85;
+
+}
+
+  
+
+.customer-rating {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    padding: .7rem 1.8rem;
+    font-size: .7rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    gap: 1.1rem;
+}
+.rating-2 {
+    margin-left: 1.8rem;
+}
+.rating-3 {
+    margin-left: 2.9rem;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+}
+.card {
+    width: 270px;
+    height: 135px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    padding: 2rem 1rem;
+}
+.c-margin-1 {
+    margin-top: 1rem;
+}
+.c-margin-2 {
+    margin-top: 2rem;
+}
+.img-card {
+    
+    width: 40px;
+    height: 40px;
+}
+.image-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.contant {
+    padding-top: .5rem;
+}
+.img-card img {
+    width: 100%;
+    border-radius: 100px;
+    /* margin-right: .7rem; */
+}
+
+.contant h5 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: .2rem;
+}
+.contant h6 {
+    color: hsl(333, 80%, 67%);
+    opacity: .7;   
+}
+.card p {
+    color: white;
+    line-height: 1.3rem;
+    font-size: .7rem;
+    padding-right: 1rem;
+}
+@media (max-width: 377px)  {
+    .container {
+        width: 100%;
+        background-image: url(./images/bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0 1.4rem;
+    }
+    .top-heading {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 2rem;
+
+    }
+    .header p {
+        line-height: 1.3rem;
+        font-size: 1rem;
+        text-align: center;
+        padding-inline: 1rem;
+    }
+    .customer-rating {
+        padding: .8rem 4rem;
+        display: block;
+    }
+    .customer-rating   .rating-text h3 {
+        font-size: 1rem;
+        color: hsl(300, 43%, 22%);
+    }
+
+    .rating {
+        width: 100%;
+    }
+    
+    .rating-img {
+        margin-left: 0;
+        margin-bottom: .5rem;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 2rem 2.5rem;
+    }
+    .rating-2 {
+        margin: 0;
+    }
+    .rating-3 {
+        margin: 0;
+    }
+    .img-card {
+        width: 35px;
+        height: 35px;
+    }
+    .contant h5, .contant h6, .card p {
+
+        font-weight: 400;
+    }
+    .contant h5 {
+        font-size: .9rem;
+        margin-bottom: .4rem;
+    }
+    .contant h6 {
+        font-size: .8rem;
+    }
+    .card p {
+        font-size: .9rem;
+        padding: 0;
+    }
+    .footer-container {
+        margin-top: 1rem;
+    }
+    .c-margin-2 {
+        margin-top: 1rem;
+    }
+    .footer-container {
+        justify-content: center;
+        background-image: url(./images/bg-pattern-bottom-mobile.svg);
+        margin-bottom: 1rem;
+    }
+}
